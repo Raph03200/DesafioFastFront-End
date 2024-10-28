@@ -1,0 +1,29 @@
+.center-flex-response{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+td,th{
+    padding: 4px;
+    margin-left: 8px ;
+}
+mat-card{
+    width: 900px;
+}
+table{
+    padding: 8px;
+}
+
+@media screen and (max-width:680px) {
+    mat-card{
+        width: 100%;
+    }
+    table{
+        padding: 0px;
+    }
+    .center-flex-response{
+        display:block;
+        justify-content: unset;
+    }
+}

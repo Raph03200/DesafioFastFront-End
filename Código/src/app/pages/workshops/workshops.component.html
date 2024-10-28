@@ -1,0 +1,54 @@
+<div class="center-flex">
+    <mat-form-field class="search-input">
+        <mat-label>Pesquisar workshop por nome: </mat-label>
+        <input matInput (input)="search($event)" placeholder="Insira aqui o Workshop">
+    </mat-form-field>
+</div>
+
+<div class="center-flex">
+    <mat-card class="mat-card-default">
+            <mat-expansion-panel disabled class="disabled-panel">
+                <mat-expansion-panel-header >
+                    <mat-panel-title>
+                        Id
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Nome
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+            </mat-expansion-panel>
+            @for (workshop of workshops; track $index) {
+                <mat-accordion>
+                    <mat-expansion-panel class="no-border">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{workshop.id}}
+                            </mat-panel-title>
+                            <mat-panel-description>
+                                {{workshop.nome}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        
+                        <mat-card-subtitle>
+                            {{workshop.dataRealizacao}}
+                        </mat-card-subtitle>
+                        <mat-card class="details-card">
+                            <mat-card-content>
+                                {{workshop.descricao}}
+                            </mat-card-content>
+                        </mat-card>
+                        <div class="details-buttons">
+                            <button mat-raised-button (click)="openDialog(workshop.id)" color="primary">Lista de colaboradores presentes</button>
+                            
+                            <button mat-raised-button color="warn" (click)="deleteProcess(workshop.id)" >Delete</button>
+                            
+                        </div>
+                    
+                    </mat-expansion-panel>
+                </mat-accordion>
+            <mat-divider></mat-divider>
+        }
+        
+    </mat-card>
+</div>
+

@@ -1,0 +1,23 @@
+/* /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mat-card-default{
+    width: 900px;
+}
+.search-input{
+    width: 900px;
+    margin-top: 32px;
+}
+
+@media screen and (max-width:680px) {
+    .search-input{
+        width: 100%;
+        margin-top: 32px;
+    }
+} 

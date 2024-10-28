@@ -1,0 +1,8 @@
+<mat-toolbar class="navbar" color="primary">
+    <h3>{{routeTitle}}</h3>
+    <div class="nav">
+        <a mat-raised-button routerLink="/" (click)="changeTitle('Colaboradores')"> Tela Colaboradores </a>
+        <a mat-raised-button routerLink="/workshops" (click)="changeTitle('Workshops')"> Tela Workshops </a>
+    </div>
+</mat-toolbar>
+<router-outlet/>

@@ -1,0 +1,14 @@
+mat-dialog-content{
+    padding: 0px !important;
+    height: 800px;
+    box-shadow: none;
+}
+mat-form-field{
+    width: 100%;
+}
+button{
+    width: 80px;
+}
+table{
+    width: 100%;
+}
