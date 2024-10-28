@@ -4,7 +4,7 @@
 Versão mais recente do Node.js
 </p>
 <p>
-Abra um novo terminal, acesse o diretório com "cd Front-End", escreva o comando 'npm install' ou 'npm i' para instalar as dependências do node_modules
+Abra um novo terminal, acesse o diretório com "cd Codigo", escreva o comando 'npm install' ou 'npm i' para instalar as dependências do node_modules
 </p>
 <p>
 Para instalar a cli do angular escreva o comando 'npm install -g @angular/cli'
